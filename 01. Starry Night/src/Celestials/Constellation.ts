@@ -1,4 +1,4 @@
-import { Point } from "./Canvas/Point/Point";
+import { Point } from "../Canvas/Point/Point";
 import { Star } from "./Star";
 
 export class Constellation {

@@ -1,7 +1,7 @@
 import { IPoint } from "./Canvas/Point/IPoint";
 import { Point } from "./Canvas/Point/Point";
-import { Constellation } from "./Constellation";
-import { Star } from "./Star";
+import { Constellation } from "./Celestials/Constellation";
+import { Star } from "./Celestials/Star";
 
 export class StarryNight {
     private readonly canvas: HTMLCanvasElement;

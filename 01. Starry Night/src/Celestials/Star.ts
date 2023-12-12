@@ -1,4 +1,4 @@
-import { IPoint } from "./Canvas/Point/IPoint";
+import { IPoint } from "../Canvas/Point/IPoint";
 
 export class Star {
     private readonly _location: IPoint;
