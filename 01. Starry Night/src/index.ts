@@ -1,19 +1,14 @@
-import { increment } from "./helpers/increment";
-import { decrement } from "./helpers/decrement";
 
-const countValue = <HTMLSpanElement>document.querySelector("#count-value");
-const incrementBtn = <HTMLButtonElement>document.querySelector("#increment-button");
-const decrementBtn = <HTMLButtonElement>document.querySelector("#decrement-button");
+initializeCanvas('starry-night');
 
-const handleIncrementClick = () => {
-    const currentValue = parseInt(countValue.innerText);
-    countValue.innerText = increment(currentValue).toString();
+
+function initializeCanvas(id: String) {
+    const canvas = <HTMLCanvasElement>document.createElement('canvas');
+
+    canvas.id = "canvas_" + id;
+    canvas.width = 1000;
+    canvas.height = 1000;
+    canvas.style.border = '1px solid'
+
+    document.body.appendChild(canvas);
 }
-
-const handleDecrementClick = () => {
-    const currentValue = parseInt(countValue.innerText);
-    countValue.innerText = decrement(currentValue).toString();
-}
-
-incrementBtn.addEventListener("click", handleIncrementClick);
-decrementBtn.addEventListener("click", handleDecrementClick);
