@@ -1,3 +1,6 @@
 import { initializeCanvas } from "./Canvas/canvasHelpers";
+import { StarryNight } from "./StarryNight";
 
-initializeCanvas('starry-night');
+const canvas = initializeCanvas('starry-night');
+const starryNight = new StarryNight(canvas);
+starryNight.draw();
