@@ -1,17 +1,24 @@
 import { IPoint } from "./Canvas/Point/IPoint";
 
 export class Star {
-    private readonly location: IPoint;
+    private readonly _location: IPoint;
+    private readonly defaultRadius: number;
     private radius: number;
 
-    constructor(location: IPoint){
-        this.location = location;
-        this.radius = 2;
+    constructor(
+        location: IPoint,
+        defaultRadius: number = 2){
+        this._location = location;
+        this.defaultRadius = defaultRadius;
+        this.radius = this.defaultRadius;
+    }
+
+    public get location(): IPoint {
+        return this._location;
     }
 
     public draw(ctx: CanvasRenderingContext2D): void {
         ctx.moveTo(this.location.x, this.location.y);
-        ctx.beginPath;
         ctx.fillStyle = 'white';
         ctx.arc(
             this.location.x,
@@ -23,6 +30,6 @@ export class Star {
     }
 
     public update(): void {
-        this.radius = Math.random() * 2 + 2; // The radius will be between 2 and 4  
+        this.radius = Math.random() * 2 + this.defaultRadius; // The radius will be between 2 and 4  
     }
 }
