@@ -41,10 +41,10 @@ export class Constellation {
             new Star(new Point(100, 300), 4),
             new Star(new Point(200, 305), 4),
             new Star(new Point(300, 350), 4),
-            new Star(new Point(400, 400), 4),
+            new Star(new Point(380, 400), 4),
             new Star(new Point(400, 500), 4),
             new Star(new Point(500, 500), 4),
-            new Star(new Point(500, 400), 4),
+            new Star(new Point(525, 395), 4),
         ];
 
         return stars;
