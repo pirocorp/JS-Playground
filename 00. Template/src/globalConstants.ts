@@ -1,1 +1,2 @@
-export const CANVAS_SIZE = 1000;
+export const CANVAS_SIZE_WIDTH = 1000;
+export const CANVAS_SIZE_HEIGHT = 1000;
