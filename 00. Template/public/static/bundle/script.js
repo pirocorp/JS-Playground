@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=document.querySelector("#count-value"),t=document.querySelector("#increment-button"),n=document.querySelector("#decrement-button");t.addEventListener("click",(()=>{const t=parseInt(e.innerText);var n;e.innerText=(n=t,++n).toString()})),n.addEventListener("click",(()=>{const t=parseInt(e.innerText);var n;e.innerText=(n=t,--n).toString()}))})();
+(()=>{"use strict";!function(e){const t=document.createElement("canvas");t.id="canvas_starry-night",t.width=1e3,t.height=1e3,t.style.border="1px solid",document.body.appendChild(t)}()})();
