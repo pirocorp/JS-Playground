@@ -1,0 +1,25 @@
+{
+  "name": "starry-night",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack",
+    "compile": "tsc --outDir ./generated",
+    "generate-tsconfig": "npx -p typescript tsc --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirocorp/JS-Playground"
+  },
+  "author": "Zdravko Zdravkov",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
